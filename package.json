@@ -1,0 +1,22 @@
+{
+    "name": "gridTest",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "parcel index.html --no-cache",
+        "build": "parcel build index.html --no-cache --public-url ./"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "autoprefixer": "^7.2.4",
+        "babel": "^6.23.0",
+        "babel-polyfill": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "node-sass": "^4.7.2",
+        "parcel-bundler": "^1.4.1"
+    }
+}
