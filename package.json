@@ -18,5 +18,44 @@
         "babel-preset-env": "^1.6.1",
         "node-sass": "^4.7.2",
         "parcel-bundler": "^1.5.0"
+    },
+    "babel": {
+        "presets": ["env"]
+    },
+    "browserslist": ["> 1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+    "postcss": {
+        "map": false,
+        "plugins": {
+            "autoprefixer": {
+                "grid": true
+            }
+        }
+    },
+    "prettier": {
+        "tabWidth": 4,
+        "useTabs": false,
+        "printWidth": 130,
+        "arrowParens": "always",
+        "overrides": [
+            {
+                "files": ["*.js", "*.jsx"],
+                "options": {
+                    "singleQuote": true,
+                    "semi": true,
+                    "trailingComma": "none",
+                    "bracketSpacing": true
+                }
+            },
+            {
+                "files": ["*.ts", "*.tsx"],
+                "options": {
+                    "singleQuote": true,
+                    "semi": true,
+                    "trailingComma": "none",
+                    "bracketSpacing": true,
+                    "parser": "typescript"
+                }
+            }
+        ]
     }
 }
