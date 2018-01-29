@@ -1,24 +1,26 @@
-document.write('YO TSawdaw!');
+(function() {
+    document.write('YO TSawdaw!');
 
-const longLine: string = `lorem awdaw dawd awd awdawdawdawd
+    const longLine: string = `lorem awdaw dawd awd awdawdawdawd
      awdaw dawd awda wdawd awd awdaw dawd awd awd awd awd awd
      awdaw dawdaw dawdaw dawd awd awda wdaw  awd awdawdawd
      awd awdawdawdawdawd awd awdaw dawd awdaw dawd awd awdaw daw d`;
 
-document.write(longLine);
+    document.write(longLine);
 
-console.warn('Yey', 'aw');
+    console.warn('Yey', 'aw');
 
-const arr = [1, 2, 3, 4, 5];
+    const arr = [1, 2, 3, 4, 5];
 
-for (const item of arr) {
-    document.write(item);
-}
+    for (const item of arr) {
+        document.write(item.toString());
+    }
 
-const prom = Promise.resolve(1);
+    const prom = Promise.resolve(1);
 
-async function test() {
-    console.warn('await prom', await prom);
-}
+    async function test() {
+        console.warn('await prom', await prom);
+    }
 
-test();
+    test();
+})();

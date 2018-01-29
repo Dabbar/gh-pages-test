@@ -2,5 +2,7 @@
     "compilerOptions": {
         "experimentalDecorators": true,
         "strictFunctionTypes": true
-    }
+    },
+    "include": ["scripts/**/*.ts"],
+    "exclude": ["node_modules"]
 }
