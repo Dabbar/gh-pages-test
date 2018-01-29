@@ -4,9 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "parcel index.html ",
-        "build": "parcel build index.html  --public-url ./"
+        "start": "./node_modules/.bin/parcel index.html ",
+        "build": "./node_modules/.bin/parcel build index.html  --public-url ./",
+        "lint:ts": "./node_modules/.bin/tslint --config tslint.json --project tsconfig.json scripts/**/*.ts "
     },
     "keywords": [],
     "author": "",
@@ -17,12 +17,21 @@
         "babel-polyfill": "^6.26.0",
         "babel-preset-env": "^1.6.1",
         "node-sass": "^4.7.2",
-        "parcel-bundler": "^1.5.0"
+        "parcel-bundler": "^1.5.1",
+        "tslint": "^5.9.1",
+        "typescript": "^2.6.2"
     },
     "babel": {
-        "presets": ["env"]
+        "presets": [
+            "env"
+        ]
     },
-    "browserslist": ["> 1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+    "browserslist": [
+        "> 1%",
+        "last 4 versions",
+        "Firefox ESR",
+        "not ie < 9"
+    ],
     "postcss": {
         "map": false,
         "plugins": {
@@ -38,7 +47,10 @@
         "arrowParens": "always",
         "overrides": [
             {
-                "files": ["*.js", "*.jsx"],
+                "files": [
+                    "*.js",
+                    "*.jsx"
+                ],
                 "options": {
                     "singleQuote": true,
                     "semi": true,
@@ -47,7 +59,10 @@
                 }
             },
             {
-                "files": ["*.ts", "*.tsx"],
+                "files": [
+                    "*.ts",
+                    "*.tsx"
+                ],
                 "options": {
                     "singleQuote": true,
                     "semi": true,
