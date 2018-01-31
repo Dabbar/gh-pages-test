@@ -1,4 +1,4 @@
-(function() {
+(function () {
     document.write('YO TSawdaw!');
 
     const longLine: string = `lorem awdaw dawd awd awdawdawdawd
@@ -9,6 +9,7 @@
     document.write(longLine);
 
     console.warn('Yey', 'aw');
+    console.warn('just testing:');
 
     const arr = [1, 2, 3, 4, 5];
 
