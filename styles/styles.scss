@@ -1,51 +1,17 @@
-$main-color: rgb(33, 76, 126);
+@import './bootstrap-reboot.min.css';
+
+body {
+    display: flex;
+
+    width: 100vw;
+    height: 100vh;
+
+    background: linear-gradient(rgb(115, 80, 228), rgb(87, 30, 194));
+}
 
 h1 {
-    color: $main-color;
-}
-.container-grid {
-    display: grid;
+    margin: auto;
 
-    width: 800px;
-    /* grid-template-columns: 150px 150px 150px 70px; */
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-rows: 150px 150px; */
-    /* grid-template-columns: repeat(4, 1fr); */
-
-    grid-template-columns: 100px 30% 1fr;
-    grid-template-rows: repeat(2, 150px);
-    grid-gap: 1rem;
-}
-.child {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 100%;
-
-    color: white;
-    border: 1px solid $main-color;
-    background-color: $main-color;
-
-    font-family: sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    /* width: 50px; */
-}
-
-.child-1 {
-    /* grid-row-start: 2;
-    grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 3; */
-    grid-row: 2/3;
-    grid-column: 3/3;
-}
-
-dialog {
-    border: none;
-    box-shadow: 0 2px 15px 0 rgba(0, 0, 0, 0.1);
-}
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.7);
+    color: whitesmoke;
+    text-shadow: 2px 2px 10px rgb(136, 136, 161);
 }
