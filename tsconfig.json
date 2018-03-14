@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "experimentalDecorators": true,
-        "strictFunctionTypes": true
+        "strictFunctionTypes": true,
+        "preserveConstEnums": true,
+        "strictPropertyInitialization": true
     },
     "include": ["scripts/**/*.ts"],
     "exclude": ["node_modules"]
